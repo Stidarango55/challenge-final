@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-1: #921A40;
+    --color-2: #C75B7A;
+    --color-3: #D9ABAB;
+    --color-4: #F4D9D0;
+    --color-5: darkslategrey;
+    --fuente-1: "Crimson Text", serif;
+}
+body{
+    background: var(--color-1);
+    margin: 1%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    margin: 0%;
+    background:var(--color-3);
+    border-radius: 5%;
+    border: solid;
+    border-color: var(--color-4);
+}
+
+.reset {
+    
+    background: none;
+    border: none;
+    width: 70px;
+    height: 70px;
+
+}
+.resetimg {
+    width: 70px;
+    height: 70px;
+}
+.contenido{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    
+    
+}
+.contenido-1{
+    display: flex;
+    border-radius: 25px;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    background: var(--color-3);
+    margin: 1%;
+    width: 450px;
+    height: 100%;
+}
+.texto-de-entrada{
+    outline: none;
+    box-sizing: border-box;
+    text-transform: lowercase;
+    color: var(--color-1);
+    resize: none;
+    margin: 1%;
+    border-radius: 25px ;
+    border: none;
+    background: var(--color-3);
+    font-family:var(--fuente-1);
+    font-size: 30px;
+    
+}
+.reglas{
+    text-align: center;
+    font-family: var(--fuente-1);
+    color:var(--color-5)
+}
+.botones{
+    padding: 4%;
+    display: flex;
+    align-items: center;
+}
+.encriptar{
+    margin: 2%;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-family: var(--fuente-1);
+    background: var(--color-2);
+    color: var(--color-4);
+    border: none;
+}
+.desencriptar{
+    margin: 2%;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-family: var(--fuente-1);
+    background: var(--color-2);
+    color: var(--color-4);
+    border: none;
+}
+.contenido-2{
+    display: flex;
+    border-radius: 25px;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    width: 450px;
+    height: 100%;
+    background: var(--color-3);
+    margin: 1%;
+    
+}
+.texto-de-salida{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 90%;
+    height: 95%;
+    margin: 1%;
+    color:var(--color-5)
+
+}
+.mensaje-1{
+    align-content: center;
+    font-family: var(--fuente-1);
+    font-size: 30px;
+}
+.mensaje-2{
+    align-content: center;
+    font-family: var(--fuente-1);
+    font-size: 20px;
+    
+}
+.copiar{  
+    flex: 1;  
+    align-items: center;
+    width: 150px;
+    height: 55px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-family: var(--fuente-1);
+    margin: 7%;
+    background: var(--color-2);
+    color: var(--color-4);
+    border: none;
+}
+
+@media (max-width: 800px){
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+    [class*="contenido-"]{
+        font-size: 15px;
+        width: 100%;
+        height: 50%;
+    }
+    .logo{
+        width: 30%;
+        height: 30%;
+    }
+    .reset{
+        width: 50%;
+        height: 50%;
+    }
+    .resetimg{
+        width: 50%;
+        height: 50%;
+    }
+}
+
